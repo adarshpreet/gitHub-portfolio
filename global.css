@@ -361,6 +361,7 @@ article {
     padding-bottom: 2rem;
     width: -webkit-fill-available !important;
     max-width: 15rem;
+    border-radius: 50%;
 }
 
 .project-info-card {
