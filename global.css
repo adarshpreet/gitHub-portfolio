@@ -557,6 +557,5 @@ article {
 
     .project-screenshots {
         height: 50%;
-        object-fit: scale-down;
     }
 }
