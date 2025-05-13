@@ -10,7 +10,7 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+  <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
     integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
     crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
@@ -21,10 +21,14 @@
     crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"
     integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF"
-    crossorigin="anonymous"></script>
+    crossorigin="anonymous"></script> -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
     integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
-  <title>Sample 5</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script>
+    <title>Sample 5</title>
 
 </head>
 
@@ -45,16 +49,16 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
               <li class="nav-item active">
-                <a class="nav-link" href="#aboutUs">about </a>
+                <a class="nav-link" href="#aboutUs" style="font-size: 2.5rem !important;">about </a>
               </li>
               <li class="nav-item active">
-                <a class="nav-link" href="#ourProjects">projects</a>
+                <a class="nav-link" href="#ourProjects" style="font-size: 2.5rem !important;">projects</a>
               </li>
               <li class="nav-item active">
-                <a class="nav-link" href="#experience">experience</a>
+                <a class="nav-link" href="#experience" style="font-size: 2.5rem !important;">experience</a>
               </li>
               <li class="nav-item active">
-                <a class="nav-link" href="#contact">contact</a>
+                <a class="nav-link" href="#contact" style="font-size: 2.5rem !important;">contact</a>
               </li>
             </ul>
           </div>
@@ -65,7 +69,7 @@
 
   <!-- profile section -->
   <section id="userProfile" class="profile-section">
-    <div class="container-fluid ">
+    <div class="container-fluid profile-div-cont">
       <div class="row profile-container-div ">
         <div class="col-12 col-sm-12 col-md-12 col-lg-6 profile-info-left-col">
           <img src="images/dummy.jpeg" alt="Education icon" class="profile-image">
@@ -80,7 +84,7 @@
             </button>
           </div>
         </div>
-      </div>
+    </div>
     </div>
   </section>
 
@@ -94,7 +98,8 @@
         <div class="col-12 col-sm-6 col-md-6">
           <div class="card">
             <div class="card-body about-card-body-div">
-              <img src="images/experience.png" alt="Education icon" class="checkmark-image">
+              <div class="text-center">
+              <img src="images/experience.png" alt="Education icon" class="checkmark-image"></div>
               <h3>experience</h3>
               <p class="about-card-body-para">3+ years <br>Senior Flutter Developer</p>
             </div>
@@ -103,7 +108,8 @@
         <div class="col-12 col-sm-6 col-md-6">
           <div class="card">
             <div class="card-body about-card-body-div">
-              <img src="images/education.png" alt="Education icon" class="checkmark-image">
+              <div class="text-center">
+              <img src="images/education.png" alt="Education icon" class="checkmark-image"></div>
               <h3>education</h3>
               <p class="about-card-body-para">3+ years <br>Senior Flutter Developer</p>
             </div>
@@ -207,7 +213,7 @@
       <p class="parargraph">explore my</p>
       <h1 class="main-heading">experience</h1>
       <div class="row">
-        <div class="col-12 col-sm-6 col-md-6">
+        <div class="col-12 col-sm-12 col-md-6 col-lg-6">
           <div class="card">
             <div class="card-body">
               <h2 class="experience-sub-title">frontend development</h2>
@@ -237,7 +243,7 @@
             </div>
           </div>
         </div>
-        <div class="col-12 col-sm-6 col-md-6">
+        <div class="col-12 col-sm-12 col-md-6 col-lg-6">
           <div class="card">
             <div class="card-body">
               <h2 class="experience-sub-title">backend development</h2>
@@ -354,18 +360,18 @@
   <section class="footer">
     <footer>
       <div class="footer-main-div">
-        <ul class="navbar-nav mr-auto footer-links">
-          <li class="nav-item active">
-            <a class="nav-link footer-anchor-tag" href="#aboutUs">about </a>
+        <ul class="footer-links">
+          <li class="active">
+            <a class="footer-anchor-tag" href="#aboutUs">about </a>
           </li>
-          <li class="nav-item active">
-            <a class="nav-link footer-anchor-tag" href="#experience">experience</a>
+          <li class="active">
+            <a class="footer-anchor-tag" href="#experience">experience</a>
           </li>
-          <li class="nav-item active">
-            <a class="nav-link footer-anchor-tag" href="#ourProjects">projects</a>
+          <li class="active">
+            <a class="footer-anchor-tag" href="#ourProjects">projects</a>
           </li>
-          <li class="nav-item active">
-            <a class="nav-link footer-anchor-tag" href="#contact">contact</a>
+          <li class="active">
+            <a class="footer-anchor-tag" href="#contact">contact</a>
           </li>
         </ul>
       </div>
